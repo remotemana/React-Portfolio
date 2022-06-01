@@ -11,10 +11,10 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" elementType={<AboutMe />} />
-        <Route path="/Portfolio" elementType={<Portfolio />} />
-        <Route path="/Contact" elementType={<Contact />} />
-        <Route path="/Resume" elementType={<Resume />} />
+        <Route path="/" element={<AboutMe />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Resume" element={<Resume />} />
       </Routes>
     </BrowserRouter>
 
