@@ -1,15 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "../styles/Portfolio.css";
-import filmSage from "../Assets/Images/Film-Sage.png"
 
 
-export default class Portfolio extends Component {
-    render(){
-        return(
-            <div>
-                
 
-            </div>
-        )
-    }
+function List(props){
+    return(
+        <ul>
+            {props.projects.map( item => (
+                <li key={item.id}>
+                    {item.title}
+                </li>
+            ))}
+        </ul>
+    )
 }
+
+export default List;

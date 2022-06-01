@@ -4,7 +4,7 @@ import "../styles/AboutMe.css";
 export default class AboutMe extends Component {
     render(){
         return(
-            <div>
+            <div className="aboutMeContainer">
                 <h1 className=" abtMe ">About Me</h1>
                     <div className="paragraph">
                         <p>
