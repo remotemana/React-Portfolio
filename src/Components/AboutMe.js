@@ -4,7 +4,9 @@ import "../styles/AboutMe.css";
 export default class AboutMe extends Component {
     render(){
         return(
-            <h1 className="uk-margin-top-xl">About Me</h1>
+            <div>
+            <h1 className=" abtMe uk-margin-top-xl">About Me</h1>
+            </div>
         )
     }
 }
