@@ -5,7 +5,7 @@ export default class AboutMe extends Component {
     render(){
         return(
             <div>
-                <h1 className=" abtMe uk-margin-top-xl">About Me</h1>
+                <h1 className=" abtMe ">About Me</h1>
                     <div className="paragraph">
                         <p>
                             My first time ever coding anything was on 3.21.22!
