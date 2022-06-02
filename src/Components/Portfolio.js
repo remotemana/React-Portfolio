@@ -1,18 +1,15 @@
 import React from 'react';
 import "../styles/Portfolio.css";
+import Projects from '../Components/Project'
 
 
 
-function List(props){
-    return(
-        <ul>
-            {props.projects.map( item => (
-                <li key={item.id}>
-                    {item.title}
-                </li>
-            ))}
-        </ul>
-    )
+
+
+export default function Portfolio() {
+return (
+    <div>
+        <Projects />
+    </div>
+)
 }
-
-export default List;

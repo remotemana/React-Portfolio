@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import "../styles/AboutMe.css";
 
+
 export default class AboutMe extends Component {
     render(){
         return(
             <div className="aboutMeContainer">
+                <img src="/my-avatar.jpg" alt="my-avatar"/>
                 <h1 className=" abtMe ">About Me</h1>
                     <div className="paragraph">
                         <p>
