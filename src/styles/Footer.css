@@ -16,6 +16,12 @@
 svg {
     color: black
 }
+@media screen and (max-width: 500px) {
+    #router {
+        display: block;
+    }
+    
+}
 
 @media screen and (max-width: 425px) {
     .router {
@@ -23,6 +29,7 @@ svg {
     }
 
     .footer {
-        margin-top:2%
+        margin-top:2%;
+        display: block;
     }
 }

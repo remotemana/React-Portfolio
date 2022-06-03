@@ -1,56 +1,69 @@
-import React, {Component, useState} from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+export default function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-const Contact = () => {
-    const [Name, setName] = useState('');
-  const [Email, setEmail] = useState('');
-  const [Message, setMessage] = useState('');
+    const handleFormSubmit = () => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        if (email && name && message) {
+            const serviceID = "service_pjde67o"
+            const templateID = "template_v6du5pv"
+            const publicKey = "LsudeP0e90Lm51_ZN"
+            const templateParams = { name, email, message }
+            emailjs.send(serviceID, templateID, templateParams, publicKey)
+                .then(function (response) {
+                    alert("Your email was successfully sent!");
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
 
+        }
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
-
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    // return name === 'firstName' ? setFirstName(value) : setLastName(value);
-    if (name === 'Name') {
-        return setName(value);
-    }
-    if (name === 'Email') {
-        return setEmail(value);
-    }
-    if (name === 'Message') {
-        return setMessage(value);
-    }
-  };
-
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-    emailjs.sendForm('service_pjde67o', 'template_4cq8j6w', {from_name: Name, reply_to: Email, message: Message}, 'LsudeP0e90Lm51_ZN')
-      .then((result) => {
-          console.log(result.text);
-          setName('');
-          setEmail('');
-          setMessage('');
-      }, (error) => {
-          console.log(error.text);
-      });
-
-    // Alert the user their first and last name, clear the inputs
-  };
     return (
         <div>
-        <input name="Name" value={Name} onChange={handleInputChange} className="name"></input>
-        <br></br>
-        <input name="Email" value={Email} onChange={handleInputChange} className="email"></input>
-        <br></br>
-        <textarea name="Message" value={Message} onChange={handleInputChange} className="message"></textarea>
-        <button onClick={handleFormSubmit} >buuuuuuton</button>
+            <h1 className="text-light">Contact Me:</h1>
+            {/* Review forms in React for this portion. Include an email form with a comment & name section */}
+            <form className="form ">
+                <input className="text-light"
+                    value={name}
+                    name="name"
+                    onChange={(e) => { setName(e.target.value) }}
+                    type="text"
+                    placeholder="Your Name"
+                />
+                <input className="text-light"
+                    value={email}
+                    name="email"
+                    onChange={(e) => { setEmail(e.target.value) }}
+                    type="email"
+                    placeholder="Your Email"
+                />
+                <textarea className="text-light"
+                    value={message}
+                    name="message"
+                    onChange={(e) => { setMessage(e.target.value) }}
+                    type="text"
+                    placeholder="Your Message"
+                />
+                <br/>
+                <br/>
+                <button style={{alignSelf:"center",width:"20%"}} type="button" onClick={handleFormSubmit}>
+                    Submit
+                </button>
+            </form>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+    
         </div>
-
-    )
+    );
 }
-
-export default Contact;

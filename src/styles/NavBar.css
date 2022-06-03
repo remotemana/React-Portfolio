@@ -21,9 +21,8 @@ text-align: left !important;
         text-align: center !important;
         margin-bottom: 20px;
     }
-    .nav {
+    #nav {
         display: flex !important;
-        flex-direction: column !important;
     }
     .navbar {
         justify-content: center !important;

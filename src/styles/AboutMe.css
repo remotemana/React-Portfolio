@@ -1,6 +1,6 @@
 .abtMe {
     margin-top: 50px;
-    margin-left: 6.5%;
+    margin-left: 11.5%;
     text-decoration: underline;
 }
 
@@ -12,11 +12,20 @@
     height: 200px;
     width: 200px;
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-bottom: 3%;
     border-radius: 50%;
     border: 1px solid black;
     box-shadow: 20px 10px 50px black;
+}
+
+.branch {
+    position: absolute;
+    height: 400px;
+    margin-left: 13%;
+    margin-top: -10%;
+    transform: rotate(210deg);
+
 }
 
 .paragraph {
@@ -24,11 +33,26 @@
     margin-right: 5%;
     font-size: 20px;
     margin-bottom:5%;
+    margin-top: 2%;
 }
 
 .think {
     position: absolute;
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 500px) {
+    .branch {
+        display: none;
+    }
+    .avatar {
+        margin-left: 25%;
+        margin-bottom: 50px;
+    }
+    .abtMe {
+        margin-left: 36%;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -45,4 +69,6 @@
         margin-left: 7%;
         margin-right: 7%;
     }
+
+    
 }

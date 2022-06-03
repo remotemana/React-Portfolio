@@ -9,7 +9,7 @@ const NavBar = () => {
  <div className="navbar" >
     <h1 className="myName">Lucas Roman</h1>
     <div className="route">
-        <Nav className="justify-content-end foot" defaultActiveKey="/home" as="ul">
+        <Nav id="nav" className="justify-content-end foot" defaultActiveKey="/home" as="ul">
           <Nav.Item as="li">
             <Nav.Link href="/">About Me</Nav.Link>
           </Nav.Item>

@@ -1,5 +1,8 @@
 import React from 'react';
 import {Card, Container, Row, Col, ThemeProvider} from 'react-bootstrap'
+import { FaGithub } from 'react-icons/fa';
+import { GrDeploy } from 'react-icons/gr';
+import "../styles/Project.css";
 
 const projects = [
 {   
@@ -77,12 +80,14 @@ export default function Projects() {
                                 <Card.Body>
                                     <Card.Title>{title}</Card.Title>
                                     <Card.Text>
-                                        <p>{p1}</p>
+                                        <p id="paragraph">{p1}</p>
                                         <p>{p2}</p>
                                     </Card.Text>
-                                        <a href={git}>Git Repos</a>
-                                        <br></br>
-                                        <a href={deploy}>Deployed App</a>
+                                    <div id="portLinks">
+                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3>←Repos</h3>
+                                            <br></br>
+                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3>←Deployed</h3>
+                                        </div>
                                 </Card.Body>
                             </Card>
                             )})}
@@ -97,12 +102,14 @@ export default function Projects() {
                                 <Card.Body>
                                     <Card.Title>{title}</Card.Title>
                                     <Card.Text>
-                                        <p>{p1}</p>
+                                        <p id="paragraph">{p1}</p>
                                         <p>{p2}</p>
                                     </Card.Text>
-                                        <a href={git}>Git Repos</a>
-                                        <br></br>
-                                        <a href={deploy}>Deployed App</a>
+                                        <div id="portLinks">
+                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3>←Repos</h3>
+                                            <br></br>
+                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3>←Deployed</h3>
+                                        </div>
                                 </Card.Body>
                             </Card>
                             )})}
