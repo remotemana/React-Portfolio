@@ -35,43 +35,18 @@ export default function Contact() {
             {/* Review forms in React for this portion. Include an email form with a comment & name section */}
             <form className="form" id="contact">
                 <h4>Name</h4>
-                <input
-                    value={name}
-                    name="name"
-                    onChange={(e) => { setName(e.target.value) }}
-                    type="text"
-                    placeholder="Your Name"
-                />
+                <input value={name} name="name" onChange={(e) => { setName(e.target.value) }} type="text" placeholder="Your Name"/>
                 <br/>
                 <h4>Email</h4>
-                <input
-                    value={email}
-                    name="email"
-                    onChange={(e) => { setEmail(e.target.value) }}
-                    type="email"
-                    placeholder="Your Email"
-                />
+                <input value={email} name="email" onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Your Email"/>
                 <br/>
                 <h4>Message</h4>
-                <textarea
-                    value={message}
-                    name="message"
-                    onChange={(e) => { setMessage(e.target.value) }}
-                    type="text"
-                    placeholder="Your Message"
-                    rows="10"
-                    
-                />
+                <textarea value={message} name="message" onChange={(e) => { setMessage(e.target.value) }} type="text" placeholder="Your Message" rows="10"/>
                 <br/>
-                
                 <button type="button" onClick={handleFormSubmit}>
                     Submit
                 </button>
             </form>
-            
-         
-           
-            
         </div>
     );
 }
