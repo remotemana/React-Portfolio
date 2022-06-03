@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import "../styles/Contact.css";
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -29,41 +30,48 @@ export default function Contact() {
 
     return (
         <div>
-            <h1 className="text-light">Contact Me:</h1>
+            <h1 id="reach">Reach me below</h1>
+            <img id="think" src="/thinking.png"></img>
             {/* Review forms in React for this portion. Include an email form with a comment & name section */}
-            <form className="form ">
-                <input className="text-light"
+            <form className="form" id="contact">
+                <h4>Name</h4>
+                <input
                     value={name}
                     name="name"
                     onChange={(e) => { setName(e.target.value) }}
                     type="text"
                     placeholder="Your Name"
                 />
-                <input className="text-light"
+                <br/>
+                <h4>Email</h4>
+                <input
                     value={email}
                     name="email"
                     onChange={(e) => { setEmail(e.target.value) }}
                     type="email"
                     placeholder="Your Email"
                 />
-                <textarea className="text-light"
+                <br/>
+                <h4>Message</h4>
+                <textarea
                     value={message}
                     name="message"
                     onChange={(e) => { setMessage(e.target.value) }}
                     type="text"
                     placeholder="Your Message"
+                    rows="10"
+                    
                 />
                 <br/>
-                <br/>
-                <button style={{alignSelf:"center",width:"20%"}} type="button" onClick={handleFormSubmit}>
+                
+                <button type="button" onClick={handleFormSubmit}>
                     Submit
                 </button>
             </form>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-    
+            
+         
+           
+            
         </div>
     );
 }

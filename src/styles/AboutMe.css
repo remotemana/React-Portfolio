@@ -4,6 +4,12 @@
     text-decoration: underline;
 }
 
+#quoteCoffee {
+    position: absolute;
+    margin-left: 6%;
+    margin-top: -1%;
+}
+
 .aboutMeContainer {
     background-color: cadetblue !important;
 }
@@ -22,10 +28,8 @@
 .branch {
     position: absolute;
     height: 400px;
-    margin-left: 13%;
+    margin-left: 20%;
     margin-top: -10%;
-    transform: rotate(210deg);
-
 }
 
 .paragraph {
@@ -36,10 +40,6 @@
     margin-top: 2%;
 }
 
-.think {
-    position: absolute;
-    transform: rotate(90deg);
-}
 
 @media screen and (max-width: 500px) {
     .branch {

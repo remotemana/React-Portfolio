@@ -8,9 +8,10 @@ export default class AboutMe extends Component {
             <div className="aboutMeContainer">
                 <h1 className=" abtMe ">About Me</h1>
                 <img src="/my-avatar.jpg" alt="my-avatar" className="avatar"/>
+                <h3 id="quoteCoffee">"Programmer: A machine that turns Coffee into Code..."</h3>
                 <img src="/branch.png" alt="branch" className="branch"/>
                     <div className="paragraph">
-                        <p>
+                        <p style={{borderTop: "1px solid antiquewhite", paddingTop: "3%"}}>
                             My first time ever coding anything was on 3.21.22!
                             Since then I have made leaps and bounds in understanding syntax and formatting structures of
                             code! I know the basics of HMTL, CSS and Javascript including API call uses and implementation. In several of my coding projects I have built
