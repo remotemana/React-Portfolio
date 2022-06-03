@@ -1,12 +1,48 @@
 .abtMe {
     margin-top: 50px;
+    margin-left: 6.5%;
+    text-decoration: underline;
 }
 
 .aboutMeContainer {
     background-color: cadetblue !important;
 }
 
+.avatar {
+    height: 200px;
+    width: 200px;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 20px 10px 50px black;
+}
+
 .paragraph {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    margin-bottom:5%;
+}
+
+.think {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 425px) {
+    .abtMe {
+        margin-left: 29%;
+        margin-bottom: 50px;
+    }
+
+    .avatar {
+        margin-left: 17%;
+        margin-bottom: 50px;
+    }
+    .paragraph {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
 }

@@ -1,0 +1,28 @@
+.footer {
+    
+    justify-content: center;
+    opacity: 90%;
+}
+
+.router {
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+svg {
+    color: black
+}
+
+@media screen and (max-width: 425px) {
+    .router {
+        Display: inline !important; 
+    }
+
+    .footer {
+        margin-top:2%
+    }
+}

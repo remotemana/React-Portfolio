@@ -1,7 +1,21 @@
-.container {
-    margin-top: 5% !important;
+
+.card {
+    margin-bottom: 15%;
+    
 }
 
-.foto {
-    border: 2px solid black;
+.row {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        width: 100% !important;
+        
+    }
+    .portBox {
+        
+        margin-right: 10%;
+    }
 }

@@ -1,11 +1,31 @@
 .navbar {
-    background-color: cadetblue !important;
+    background-color: antiquewhite !important;
     justify-content: end;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:1%;
+    padding: 40px;
+    font-size: 30px;
+    justify-content: space-between;
 }
 
 .myName {
-    margin-right: 800px
+font-weight: 900;
+font-size: 60px;
+text-align: left !important;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .myName {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .nav {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .navbar {
+        justify-content: center !important;
+    }
 }

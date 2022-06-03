@@ -6,8 +6,9 @@ export default class AboutMe extends Component {
     render(){
         return(
             <div className="aboutMeContainer">
-                <img src="/my-avatar.jpg" alt="my-avatar"/>
                 <h1 className=" abtMe ">About Me</h1>
+                <img src="/circuit.png" alt="thinking-img" className="think"/>
+                <img src="/my-avatar.jpg" alt="my-avatar" className="avatar"/>
                     <div className="paragraph">
                         <p>
                             My first time ever coding anything was on 3.21.22!
