@@ -21,7 +21,7 @@ const projects = [
 },
 {
     title: "ReadMe Generator",
-    img:"/ReadmeGen.gif",
+    img:"/ReadMeGen.gif",
     alt:"readme",
     p1:"This project uses the terminal to prompt a user with questions about their project and then will output a professional, styled README. ",
     p2:"",
