@@ -87,6 +87,19 @@
     }
 }
 
-@media screen and (min-width: 425px){
+@media screen and (max-width: 425px){
+    #git {
+        margin-left: -15px;
+        position: absolute;
+    }
 
+    #linkedin {
+        margin-left: 75px;
+        position: absolute;
+    }
+
+    #gist {
+        margin-left: 175px;
+        position: absolute;
+    }
 }
