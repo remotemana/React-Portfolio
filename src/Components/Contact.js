@@ -80,7 +80,7 @@ export default function Contact() {
            document.getElementById("reach").style.backgroundColor = "#091540"
            document.getElementById("reach").style.color = "antiquewhite"
            function writeName() {
-               document.getElementById("reach").style.innerHTML ="Reach me below!"
+            document.getElementById("reach").innerHTML ="Reach me below! "
                document.getElementById("reach").style.backgroundColor = ""
                document.getElementById("reach").style.color = "black"
            }
