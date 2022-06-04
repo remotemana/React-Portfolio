@@ -117,16 +117,16 @@ export default function Contact() {
            <img id="think" src="/thinkman.png" alt="thinkingperson"></img>
            {/* Review forms in React for this portion. Include an email form with a comment & name section */}
            <form className="form" id="contact">
-               <h4>Name</h4>
-               <input value={name} name="name" onChange={(e) => { setName(e.target.value) }} type="text" onBlur={validateName} placeholder="Your Name"/>
+               <h4 id="mini" style={{fontSize:"40px"}} >Name</h4>
+               <input id="mini" style={{fontSize:"30px"}} value={name} name="name" onChange={(e) => { setName(e.target.value) }} type="text" onBlur={validateName} placeholder="Your Name Here"/>
                <br/>
-               <h4>Email</h4>
-               <input value={email} name="email" onChange={(e) => { setEmail(e.target.value) }} type="email" onBlur={validateEmail} placeholder="Your Email"/>
+               <h4 id="mini" style={{fontSize:"40px"}}>Email</h4>
+               <input id="mini" style={{fontSize:"30px"}} value={email} name="email" onChange={(e) => { setEmail(e.target.value) }} type="email" onBlur={validateEmail} placeholder="Your Email Here"/>
                <br/>
-               <h4>Message</h4>
-               <textarea value={message} name="message" onChange={(e) => { setMessage(e.target.value) }} type="text" onBlur={validateMessage} placeholder="Your Message" rows="10"/>
+               <h4 id="mini" style={{fontSize:"40px"}}>Message</h4>
+               <textarea id="mini" style={{fontSize:"30px"}} value={message} name="message" onChange={(e) => { setMessage(e.target.value) }} type="text" onBlur={validateMessage} placeholder="Your Message Here" rows="10"/>
                <br/>
-               <button type="button" onClick={handleFormSubmit}>
+               <button id="mini" style={{fontSize:"30px"}} type="button" onClick={handleFormSubmit}>
                    Submit
                </button>
                <p1 id="formValidate"></p1>

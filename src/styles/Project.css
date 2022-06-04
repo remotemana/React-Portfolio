@@ -27,6 +27,7 @@ h3 {
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     margin-top: 5%;
+    font-size: 20px;
     animation: cardPort 3s ease;
 }
 
@@ -52,5 +53,9 @@ border-top: 2px solid cadetblue;
 @media screen and (max-width: 500px) {
     .portLink {
         display: none;
+    }
+
+    .card {
+        font-size: 16px;
     }
 }

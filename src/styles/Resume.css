@@ -103,6 +103,10 @@
         margin-left: 175px;
         position: absolute;
     }
+
+    #mini {
+        font-size: 18px !important;
+    }
 }
 
 

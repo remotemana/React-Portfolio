@@ -40,7 +40,7 @@
 .paragraph {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom:5%;
     margin-top: 2%;
 }
@@ -95,6 +95,7 @@
     .paragraph {
         margin-left: 7%;
         margin-right: 7%;
+        font-size: 20px;
     }
 
     #quoteCoffee {
