@@ -4,7 +4,7 @@ import "../styles/Resume.css";
 export default function Resume() {
     return(
         <div>
-            <h1 id="resumeQuote">"Knowledge is also defined as the ability to quickly source relevent data and its application" </h1>
+            <h1 id="resumeQuote">"Knowledge is also defined as the ability to quickly source relevent data and in its rapid application" </h1>
             <div id="resumeBox">
                 <div className="cardList">
                     <h1 className="cardTitle">Skilled Proficiencies</h1>
