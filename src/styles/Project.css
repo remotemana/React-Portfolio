@@ -8,6 +8,12 @@ a {
     margin-right: 25px;
 }
 
+#formValidate{
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 23%
+}
+
 h3 {
   width: 50%;
   padding-top: 10px;
