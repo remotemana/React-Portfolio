@@ -47,3 +47,42 @@
     margin-left: 3%;
     animation: reach1 1s ease;
 }
+
+@media (max-width: 500px) {
+    #resumeBox {
+        flex-direction: column;
+        margin-top: 30%;
+    } 
+
+    #git {
+        margin-left: 25px;
+        position: absolute;
+    }
+
+    #linkedin {
+        margin-left: 140px;
+        position: absolute;
+    }
+
+    #gist {
+        margin-left: 250px;
+        position: absolute;
+    }
+    
+    .router{
+        position: absolute;
+    }
+
+    #resumeQuote {
+        margin-left: 7%;
+        margin-top: -25%;
+    }
+
+    .cardList {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    body {
+        margin-bottom: 150px;
+    }
+}

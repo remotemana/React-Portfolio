@@ -63,14 +63,32 @@ button {
 #think {
     display: none;
 }
+
+.myName {
+    font-size: 45px
+}
+
+.nav-item {
+    margin-right: 15%
+}
+
+#reach2{
+    margin-top: 5%;
+}
+#reach1 {
+    margin-top: 5%;
+    margin-left: 13%;
+}
 #contact{
-    margin-top: 10%;
+    margin-top: 5%;
     width: 50%;
     margin-left: 25%;
    
 }
 
 #reach {
-    margin-top: 10%;
+    margin-top:1%;
+    width: 75%;
+    margin-left: 6%
 }
 }

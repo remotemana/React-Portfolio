@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "../styles/Contact.css";
-
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    // refactoring wet code for styling purposes
+    let reach = document.getElementById("reach");
+    const Reach = reach.style
+    // ==================end==================
     
     const handleFormSubmit = () => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -14,6 +17,7 @@ export default function Contact() {
             const templateID = "template_v6du5pv"
             const publicKey = "LsudeP0e90Lm51_ZN"
             const templateParams = { name, email, message }
+            // handling the email send off
             emailjs.send(serviceID, templateID, templateParams, publicKey)
                 .then(function (response) {
                     alert("Your email was successfully sent!");
@@ -23,15 +27,17 @@ export default function Contact() {
                 });
                 
         } else {
-                    document.getElementById("reach").innerHTML = "All fields are required!"
-                    document.getElementById("reach").style.backgroundColor = "#091540"
-                    document.getElementById("reach").style.color = "antiquewhite"
-                    document.getElementById("reach").style.width = "25%"
+            // updating the field to alert user of validation
+                    reach.innerHTML = "All fields are required!";
+                    Reach.backgroundColor = "#091540";
+                    Reach.color = "antiquewhite";
+                    Reach.width = "40%";
+
                     function writeName() {
-                        document.getElementById("reach").innerHTML ="Reach me below"
-                        document.getElementById("reach").style.backgroundColor = ""
-                        document.getElementById("reach").style.width = ""
-                        document.getElementById("reach").style.color = "black"
+                        reach.innerHTML ="Reach me below"
+                        Reach.backgroundColor = ""
+                        Reach.width = ""
+                        Reach.color = "black"
                     }
                      setTimeout(writeName, 1500)
         }
@@ -46,13 +52,13 @@ export default function Contact() {
         if (e.target && e.target.value) {
             setName(e.target.value);
         } else {
-            document.getElementById("reach").innerHTML = "Need a Name!"
-            document.getElementById("reach").style.backgroundColor = "#091540"
-            document.getElementById("reach").style.color = "antiquewhite"
+            reach.innerHTML = "Need a Name!"
+            Reach.backgroundColor = "#091540"
+            Reach.color = "antiquewhite"
             function writeName() {
-                document.getElementById("reach").innerHTML ="Reach me below!"
-                document.getElementById("reach").style.backgroundColor = ""
-                document.getElementById("reach").style.color = "black"
+                reach.innerHTML ="Reach me below!"
+                Reach.backgroundColor = ""
+                Reach.color = "black"
             }
              setTimeout(writeName, 1500)
         }
@@ -71,13 +77,13 @@ export default function Contact() {
             
             setEmail(e.target.value);
         } else {
-            document.getElementById("reach").innerHTML = "Need an Email!"
-            document.getElementById("reach").style.backgroundColor = "#091540"
-            document.getElementById("reach").style.color = "antiquewhite"
+            reach.innerHTML = "Need an Email!"
+            Reach.backgroundColor = "#091540"
+            Reach.color = "antiquewhite"
             function writeName() {
-                document.getElementById("reach").innerHTML ="Reach me below!"
-                document.getElementById("reach").style.backgroundColor = ""
-                document.getElementById("reach").style.color = "black"
+                reach.innerHTML ="Reach me below!"
+                Reach.backgroundColor = ""
+                Reach.color = "black"
             }
 
             setTimeout(writeName, 1500)
@@ -90,15 +96,15 @@ export default function Contact() {
         if (e.target && e.target.value) {
             setName(e.target.value);
         } else {
-            document.getElementById("reach").innerHTML = "Message Required!"
-            document.getElementById("reach").style.backgroundColor = "#091540"
-            document.getElementById("reach").style.color = "antiquewhite"
-            document.getElementById("reach").style.width = "25%"
+            reach.innerHTML = "Message Required!"
+            Reach.backgroundColor = "#091540"
+            Reach.color = "antiquewhite"
+            Reach.width = "40%"
             function writeName() {
-                document.getElementById("reach").innerHTML ="Reach me below! "
-                document.getElementById("reach").style.backgroundColor = ""
-                document.getElementById("reach").style.color = "black"
-                document.getElementById("reach").style.width = ""
+                reach.innerHTML ="Reach me below! "
+                Reach.backgroundColor = ""
+                Reach.color = "black"
+                Reach.width = ""
             }
              setTimeout(writeName, 1500)
         }
