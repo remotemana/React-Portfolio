@@ -30,8 +30,10 @@ export default function Contact() {
 
     return (
         <div>
-            <h1 id="reach">Reach me below</h1>
-            <img id="think" src="/thinking.png"></img>
+            <h1 id="reach2" >Got a project?</h1>
+            <h1 id="reach1">Need a sleek custom site?</h1>
+            <h1 id="reach">Reach me below!</h1>
+            <img id="think" src="/thinkman.png"></img>
             {/* Review forms in React for this portion. Include an email form with a comment & name section */}
             <form className="form" id="contact">
                 <h4>Name</h4>

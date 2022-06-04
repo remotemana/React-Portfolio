@@ -2,6 +2,7 @@
     margin-top: 50px;
     margin-left: 11.5%;
     text-decoration: underline;
+    color: black;
 }
 
 #quoteCoffee {
@@ -13,6 +14,9 @@
 .aboutMeContainer {
     background-color: cadetblue !important;
 }
+.myName {
+    margin-left: 40px;
+}
 
 .avatar {
     height: 200px;
@@ -22,14 +26,14 @@
     margin-bottom: 3%;
     border-radius: 50%;
     border: 1px solid black;
-    box-shadow: 20px 10px 50px black;
+    box-shadow: 20px 10px 50px #114b5f;
 }
 
 .branch {
     position: absolute;
     height: 400px;
-    margin-left: 20%;
-    margin-top: -10%;
+    margin-left: 25%;
+    margin-top: -7%;
 }
 
 .paragraph {
@@ -40,6 +44,11 @@
     margin-top: 2%;
 }
 
+@media (max-width: 1024px) {
+    .branch {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .branch {
@@ -52,6 +61,11 @@
     .abtMe {
         margin-left: 36%;
         margin-bottom: 25px;
+    }
+
+    #quoteCoffee {
+
+        display: none;
     }
 }
 
@@ -68,6 +82,10 @@
     .paragraph {
         margin-left: 7%;
         margin-right: 7%;
+    }
+
+    #quoteCoffee {
+        display: none;
     }
 
     

@@ -70,7 +70,7 @@ export default function Projects() {
     <ThemeProvider breakpoints={['md','sm','xs']}>
         <div className="portBox">
             <Container fluid>
-                <Row>
+                <Row id="row">
                     <Col>
                         <div>
                             {projects.map(({title, img, alt, p1, p2, git, deploy})=> {

@@ -8,10 +8,10 @@ const NavBar = () => {
         return(
  <div className="navbar" >
     <h1 className="myName">Lucas Roman</h1>
-    <div className="route">
-        <Nav id="nav" className="justify-content-end foot" defaultActiveKey="/home" as="ul">
+    <div className="route" >
+        <Nav id="nav" className="justify-content-center foot" defaultActiveKey="/home" as="ul" >
           <Nav.Item as="li">
-            <Nav.Link href="/">About Me</Nav.Link>
+            <Nav.Link  href="/">About Me</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Nav.Link href="/Portfolio">Portfolio</Nav.Link>

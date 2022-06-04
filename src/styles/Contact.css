@@ -1,12 +1,22 @@
 #think {
     position: absolute;
-    margin-left: 60%;
-    width: 20%;
+    margin-left: 55%;
+    margin-top: -4%;
+    width: 30%;
 }
 #reach{
-    margin-left: 16%;
+    margin-left: 19%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+#reach1 {
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+#reach2 {
+    margin-left: 3%;
+    margin-top: 2%;
 }
 
 textarea {
@@ -28,7 +38,22 @@ button {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-left: 10%;
+    margin-left: 13%;
    
 }
 
+@media screen and (max-width: 500px) {
+#think {
+    display: none;
+}
+#contact{
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+   
+}
+
+#reach {
+    margin-top: 10%;
+}
+}

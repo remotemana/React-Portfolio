@@ -14,8 +14,7 @@ export default class AboutMe extends Component {
                         <p style={{borderTop: "1px solid antiquewhite", paddingTop: "3%"}}>
                             My first time ever coding anything was on 3.21.22!
                             Since then I have made leaps and bounds in understanding syntax and formatting structures of
-                            code! I know the basics of HMTL, CSS and Javascript including API call uses and implementation. In several of my coding projects I have built
-                            full crud applications both FrontEnd and BackEnd! The most challenging was server routes! 
+                            code! I know the basics of HMTL, CSS and Javascript including API call uses and implementation. In several of my coding projects I have built CRUD applications both FrontEnd and BackEnd!
                             I am currently learning React which is how I built and designed this Portfolio!
                         </p>
                         <p>
@@ -27,6 +26,9 @@ export default class AboutMe extends Component {
                             BootCamp and knew that whatever I did next, it would be to apply and get myself enrolled.
 
                             It has been the most challenging experience of my life and I am loving every second of it!
+                        </p>
+                        <p>
+                            I am looking for Projects, Freelance work, Ideas and Collaborative work to expand my knowledge of coding and full stack web development. Remember to Always Being Coding!
                         </p>
                     </div>
             </div>
