@@ -8,11 +8,14 @@ a {
     margin-right: 25px;
 }
 
-#formValidate{
-    position: absolute;
-    margin-top: 23%;
-    margin-left: 23%
+#projectTitle {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration:underline;
+    font-size: 50px;
+    font-weight: 900;
 }
+
 
 h3 {
   width: 50%;
@@ -23,8 +26,20 @@ h3 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    transition: all 0.6s ease;
+    margin-top: 5%;
+    animation: cardPort 3s ease;
 }
+
+@keyframes cardPort {
+    0% {
+        transform: translateX(-100%) rotate(0deg);
+        
+      }
+      100% {
+        transform: translateX(0) rotate(360deg);
+      }
+}
+
 
 .card:hover{
     box-shadow: rgba(255, 172, 28, 0.199) -10px 10px, rgba(255, 172, 28, 0.19) -20px 20px ;
@@ -32,4 +47,10 @@ h3 {
 
 #paragraph {
 border-top: 2px solid cadetblue;
+}
+
+@media screen and (max-width: 500px) {
+    .portLink {
+        display: none;
+    }
 }

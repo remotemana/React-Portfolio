@@ -27,7 +27,7 @@ const projects = [
     img:"/ReadMeGen.gif",
     alt:"readme",
     p1:"This project uses the terminal to prompt a user with questions about their project and then will output a professional, styled README. ",
-    p2:"",
+    p2:"It includes, conditional badge rendering and license linking.",
     git:"https://github.com/remotemana/README-gen",
     deploy:"https://drive.google.com/file/d/1H9G0Jm_HF50yVTezbo4i7VyeoUSu682b/view"
 },
@@ -70,6 +70,7 @@ export default function Projects() {
     <ThemeProvider breakpoints={['md','sm','xs']}>
         <div className="portBox">
             <Container fluid>
+                            <h1 id="projectTitle">My Projects</h1>
                 <Row id="row">
                     <Col>
                         <div>
@@ -84,9 +85,9 @@ export default function Projects() {
                                         <p>{p2}</p>
                                     </Card.Text>
                                     <div id="portLinks">
-                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3>←Repos</h3>
+                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3 className="portLink">←Repos</h3>
                                             <br></br>
-                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3>←Deployed</h3>
+                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3 className="portLink">←Deployed</h3>
                                         </div>
                                 </Card.Body>
                             </Card>
@@ -106,9 +107,9 @@ export default function Projects() {
                                         <p>{p2}</p>
                                     </Card.Text>
                                         <div id="portLinks">
-                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3>←Repos</h3>
+                                            <a href={git}><h1 titile="test"><FaGithub /></h1></a> <h3 className="portLink">←Repos</h3>
                                             <br></br>
-                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3>←Deployed</h3>
+                                            <a href={deploy}><h1><GrDeploy/></h1></a> <h3 className="portLink">←Deployed</h3>
                                         </div>
                                 </Card.Body>
                             </Card>

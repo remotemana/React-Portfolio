@@ -8,16 +8,32 @@
     margin-left: 19%;
     margin-top: 2%;
     margin-bottom: 2%;
+    animation: reach1 2s ease;
+    width: 18%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 50%;
 }
 #reach1 {
     margin-left: 7%;
     margin-top: 2%;
+    animation: reach1 1.7s ease;
 }
+
 
 #reach2 {
     margin-left: 3%;
     margin-top: 2%;
+    animation: reach1 0.8s ease;
 }
+@keyframes reach1 {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 textarea {
     resize: none;
@@ -27,6 +43,7 @@ textarea {
 input {
     background-color: antiquewhite;
 }
+
 
 button {
     background-color: antiquewhite;

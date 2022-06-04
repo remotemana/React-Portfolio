@@ -6,7 +6,7 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-
+    
     const handleFormSubmit = () => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         if (email && name && message) {
@@ -23,7 +23,17 @@ export default function Contact() {
                 });
                 
         } else {
-            console.log("Please enter all fields")
+                    document.getElementById("reach").innerHTML = "All fields are required!"
+                    document.getElementById("reach").style.backgroundColor = "#091540"
+                    document.getElementById("reach").style.color = "antiquewhite"
+                    document.getElementById("reach").style.width = "25%"
+                    function writeName() {
+                        document.getElementById("reach").innerHTML ="Reach me below"
+                        document.getElementById("reach").style.backgroundColor = ""
+                        document.getElementById("reach").style.width = ""
+                        document.getElementById("reach").style.color = "black"
+                    }
+                     setTimeout(writeName, 1500)
         }
         setName('');
         setEmail('');
@@ -36,9 +46,13 @@ export default function Contact() {
         if (e.target && e.target.value) {
             setName(e.target.value);
         } else {
-            document.getElementById("formValidate").innerHTML = "Need a Name!"
+            document.getElementById("reach").innerHTML = "Need a Name!"
+            document.getElementById("reach").style.backgroundColor = "#091540"
+            document.getElementById("reach").style.color = "antiquewhite"
             function writeName() {
-                document.getElementById("formValidate").innerHTML =" "
+                document.getElementById("reach").innerHTML ="Reach me below!"
+                document.getElementById("reach").style.backgroundColor = ""
+                document.getElementById("reach").style.color = "black"
             }
              setTimeout(writeName, 1500)
         }
@@ -47,16 +61,46 @@ export default function Contact() {
     const validateEmail = (e) => {
         console.log("validate Email triggered")
         e.preventDefault();
-        if (e.target && e.target.value == /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/) {
-
-            setName(e.target.value);
+        if (e.target && e.target.value) {
+            var pattern = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+            isEmail()
+            function isEmail(str) {
+                var output = str.match(pattern);
+                console.log(output)
+            }
+            
+            setEmail(e.target.value);
         } else {
-            document.getElementById("formValidate").innerHTML = "Need an Email!"
+            document.getElementById("reach").innerHTML = "Need an Email!"
+            document.getElementById("reach").style.backgroundColor = "#091540"
+            document.getElementById("reach").style.color = "antiquewhite"
             function writeName() {
-                document.getElementById("formValidate").innerHTML =" "
+                document.getElementById("reach").innerHTML ="Reach me below!"
+                document.getElementById("reach").style.backgroundColor = ""
+                document.getElementById("reach").style.color = "black"
             }
 
             setTimeout(writeName, 1500)
+        }
+    }
+
+    const validateMessage = (e) => {
+        console.log("validate Name triggered")
+        e.preventDefault();
+        if (e.target && e.target.value) {
+            setName(e.target.value);
+        } else {
+            document.getElementById("reach").innerHTML = "Message Required!"
+            document.getElementById("reach").style.backgroundColor = "#091540"
+            document.getElementById("reach").style.color = "antiquewhite"
+            document.getElementById("reach").style.width = "25%"
+            function writeName() {
+                document.getElementById("reach").innerHTML ="Reach me below! "
+                document.getElementById("reach").style.backgroundColor = ""
+                document.getElementById("reach").style.color = "black"
+                document.getElementById("reach").style.width = ""
+            }
+             setTimeout(writeName, 1500)
         }
     }
 
@@ -65,8 +109,8 @@ export default function Contact() {
             <h1 id="reach2" >Got a project?</h1>
             <h1 id="reach1">Need a sleek custom site?</h1>
             <h1 id="reach">Reach me below!</h1>
-            <h1 id="formValidate"></h1>
-            <img id="think" src="/thinkman.png"></img>
+            
+            <img id="think" src="/thinkman.png" alt="thinkingperson"></img>
             {/* Review forms in React for this portion. Include an email form with a comment & name section */}
             <form className="form" id="contact">
                 <h4>Name</h4>
@@ -76,11 +120,12 @@ export default function Contact() {
                 <input value={email} name="email" onChange={(e) => { setEmail(e.target.value) }} type="email" onBlur={validateEmail} placeholder="Your Email"/>
                 <br/>
                 <h4>Message</h4>
-                <textarea value={message} name="message" onChange={(e) => { setMessage(e.target.value) }} type="text" placeholder="Your Message" rows="10"/>
+                <textarea value={message} name="message" onChange={(e) => { setMessage(e.target.value) }} type="text" onBlur={validateMessage} placeholder="Your Message" rows="10"/>
                 <br/>
                 <button type="button" onClick={handleFormSubmit}>
                     Submit
                 </button>
+                <p1 id="formValidate"></p1>
             </form>
         </div>
     );
