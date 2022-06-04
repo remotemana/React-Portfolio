@@ -48,6 +48,7 @@
     animation: reach1 1s ease;
 }
 
+
 @media screen and (max-width: 500px) {
     #resumeBox {
         flex-direction: column;
@@ -103,3 +104,23 @@
         position: absolute;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    #git {
+        margin-left: -1px;
+        position: absolute;
+    }
+
+    #linkedin {
+        margin-left: 75px;
+        position: absolute;
+    }
+
+    #gist {
+        margin-left: 160px;
+        position: absolute;
+        margin-top: 1.5px;
+    }
+     
+ }

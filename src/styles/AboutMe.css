@@ -51,6 +51,18 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    #quoteCoffee {
+        margin-left: 47%;
+        margin-top: -175px
+    }   
+    .myName {
+        border-bottom: 2px solid black;
+        width: 700px;
+        margin-bottom: 5%
+    }
+}
+
 @media screen and (max-width: 500px) {
     .branch {
         display: none;
@@ -97,5 +109,6 @@
     margin-right: 35px;
     border-bottom: 2px solid black;
    }
-    
+
+
 }
