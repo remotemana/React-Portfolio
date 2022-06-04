@@ -32,11 +32,13 @@ export default function Contact() {
                    document.getElementById("reach").style.backgroundColor = "#091540";
                    document.getElementById("reach").style.color = "antiquewhite";
                    document.getElementById("reach").style.width = "40%";
+                   document.getElementById("reach").style.marginLeft = "125px"
                    function writeName() {
                        document.getElementById("reach").innerHTML ="Reach me below"
                        document.getElementById("reach").style.backgroundColor = ""
                        document.getElementById("reach").style.width = ""
                        document.getElementById("reach").style.color = "black"
+                       document.getElementById("reach").style.marginLeft = ""
                    }
                     setTimeout(writeName, 1500)
        }
@@ -86,7 +88,7 @@ export default function Contact() {
        }
    }
    const validateMessage = (e) => {
-       console.log("validate Name triggered")
+       console.log("validate Message triggered")
        e.preventDefault();
        if (e.target && e.target.value) {
            setName(e.target.value);
@@ -95,11 +97,13 @@ export default function Contact() {
            document.getElementById("reach").style.backgroundColor = "#091540"
            document.getElementById("reach").style.color = "antiquewhite"
            document.getElementById("reach").style.width = "40%"
+           document.getElementById("reach").style.marginLeft = "125px"
            function writeName() {
                document.getElementById("reach").innerHTML ="Reach me below! "
                document.getElementById("reach").style.backgroundColor = ""
                document.getElementById("reach").style.color = "black"
                document.getElementById("reach").style.width = ""
+               document.getElementById("reach").style.marginLeft = ""
             }
             setTimeout(writeName, 1500)
        }
