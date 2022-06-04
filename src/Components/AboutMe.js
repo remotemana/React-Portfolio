@@ -28,7 +28,7 @@ export default class AboutMe extends Component {
                             It has been the most challenging experience of my life and I am loving every second of it!
                         </p>
                         <p>
-                            I am looking for Projects, Freelance work, Ideas and Collaborative work to expand my knowledge of coding and full stack web development. Remember to Always Being Coding!
+                            I am looking for Projects, Freelance work, Ideas and Collaborative endeavors to expand my knowledge of coding and full stack web development. Remember too Always Being Coding!
                         </p>
                     </div>
             </div>
